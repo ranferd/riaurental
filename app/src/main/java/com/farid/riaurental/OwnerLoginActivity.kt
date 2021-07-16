@@ -20,7 +20,7 @@ class OwnerLoginActivity : AppCompatActivity() {
         auth = FirebaseAuth.getInstance()
         if (auth.currentUser != null) {
             // Signed in, launch the owner home activity
-//            startActivity(Intent(this, MainActivity::class.java))
+            startActivity(Intent(this, OwnerMainActivity::class.java))
             finish()
             return
         }
@@ -44,7 +44,7 @@ class OwnerLoginActivity : AppCompatActivity() {
                     }
                     else {
                         Toast.makeText(this, "Successfully Login", Toast.LENGTH_SHORT).show()
-//                        startActivity(Intent(this, MainActivity::class.java))
+                        startActivity(Intent(this, OwnerMainActivity::class.java))
                     }
                 }
                 .addOnFailureListener{
