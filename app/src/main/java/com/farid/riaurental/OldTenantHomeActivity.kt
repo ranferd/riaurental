@@ -22,7 +22,6 @@ class OldTenantHomeActivity : AppCompatActivity() {
         setContentView(R.layout.old_activity_tenant_home)
 
         auth = FirebaseAuth.getInstance()
-
         ref = FirebaseDatabase.getInstance().getReference("rents")
         list = mutableListOf()
         listView = findViewById(R.id.listView)
@@ -36,6 +35,7 @@ class OldTenantHomeActivity : AppCompatActivity() {
                     list.clear()
                     for (data in snapshot.children){
                         val rent = data.getValue(RentModel::class.java)
+
                         list.add(rent!!)
                     }
                     val adapter = RentAdapter(this@OldTenantHomeActivity,R.layout.old_activity_rent_item,list)
@@ -48,7 +48,7 @@ class OldTenantHomeActivity : AppCompatActivity() {
     //sign out method
     fun signOut() {
         auth.signOut()
-        finishAffinity();
+        finishAffinity()
         startActivity(Intent(this, MainActivity::class.java))
     }
 }

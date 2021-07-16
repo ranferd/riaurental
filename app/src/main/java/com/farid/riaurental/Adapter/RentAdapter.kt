@@ -33,7 +33,6 @@ class RentAdapter(val mCtx: Context, val layoutResId: Int, val list: List<RentMo
         textName.text = rent.name
         textAddress.text = rent.address
 
-        val duration : String
         if (rent.duration == "d") {
             textDuration.text = "/day"
         }
@@ -50,12 +49,12 @@ class RentAdapter(val mCtx: Context, val layoutResId: Int, val list: List<RentMo
         val dec = DecimalFormat("#,###")
         textPrice.text = "Rp "+ dec.format(rent.price).toString()
 
-//        if (rent.pictures.isEmpty()) {
-//            imageView.setImageResource(R.drawable.house_placeholder)
-//        }
-//        else{
-//            Picasso.get().load(rent.pictures).into(imageView)
-//        }
+        if (rent.pictures.isEmpty()) {
+            imageView.setImageResource(R.drawable.house_placeholder)
+        }
+        else{
+            Picasso.get().load(rent.pictures.first().toString()).into(imageView)
+        }
 
         textName.setOnClickListener {
             showDetail(rent)

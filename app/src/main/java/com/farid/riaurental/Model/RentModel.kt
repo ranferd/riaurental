@@ -9,6 +9,8 @@ data class RentModel(
     val address: String = "",
     val duration: String = "",
     val ownerID: String = "",
-    val createdAt: String = "") {
+    val createdAt: String = "",
+    val pictures: MutableList<Any> = mutableListOf()
+) {
 
 }
