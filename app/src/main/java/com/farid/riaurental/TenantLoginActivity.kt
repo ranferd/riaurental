@@ -20,7 +20,7 @@ class TenantLoginActivity : AppCompatActivity() {
         auth = FirebaseAuth.getInstance()
         if (auth.currentUser != null) {
             // Signed in, launch the tenant home activity
-            startActivity(Intent(this, OldTenantHomeActivity::class.java))
+            startActivity(Intent(this, TenantMainActivity::class.java))
             finish()
             return
         }
@@ -44,7 +44,7 @@ class TenantLoginActivity : AppCompatActivity() {
                     }
                     else {
                         Toast.makeText(this, "Successfully Login", Toast.LENGTH_SHORT).show()
-                        startActivity(Intent(this, OldTenantHomeActivity::class.java))
+                        startActivity(Intent(this, TenantMainActivity::class.java))
                     }
                 }
                 .addOnFailureListener{

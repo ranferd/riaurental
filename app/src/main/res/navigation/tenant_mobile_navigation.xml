@@ -7,15 +7,21 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.farid.riaurental.UI.owner.home.HomeFragment"
+        android:name="com.farid.riaurental.UI.tenant.home.HomeFragment"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_owner_home" />
 
     <fragment
         android:id="@+id/navigation_rent"
-        android:name="com.farid.riaurental.UI.owner.rent.RentFragment"
+        android:name="com.farid.riaurental.UI.tenant.booking.BookingFragment"
         android:label="@string/title_rent"
-        tools:layout="@layout/fragment_owner_rent" />
+        tools:layout="@layout/fragment_tenant_booking" />
+
+    <fragment
+        android:id="@+id/navigation_wishlist"
+        android:name="com.farid.riaurental.UI.tenant.wishlist.WishlistFragment"
+        android:label="@string/title_wishlist"
+        tools:layout="@layout/fragment_tenant_wishlist" />
 
     <fragment
         android:id="@+id/navigation_chatlist"

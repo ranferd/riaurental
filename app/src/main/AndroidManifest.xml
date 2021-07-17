@@ -13,8 +13,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".TenantMainActivity"
+            android:label="@string/title_activity_tenant_main" />
+        <activity
             android:name=".OwnerMainActivity"
-            android:label="@string/title_activity_owner_main"></activity>
+            android:label="@string/title_activity_owner_main" />
         <activity android:name=".OldTenantHomeActivity" />
         <activity
             android:name=".ForgotPasswordActivity"

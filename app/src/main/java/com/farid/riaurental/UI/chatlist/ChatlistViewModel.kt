@@ -1,13 +1,13 @@
-package com.farid.riaurental.owner.ui.home
+package com.farid.riaurental.UI.chatlist
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class HomeViewModel : ViewModel() {
+class ChatlistViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
-        value = "This is home Fragment"
+        value = "This is chatlist Fragment"
     }
     val text: LiveData<String> = _text
 }

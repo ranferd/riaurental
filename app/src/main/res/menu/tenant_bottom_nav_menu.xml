@@ -8,8 +8,13 @@
 
     <item
         android:id="@+id/navigation_rent"
-        android:icon="@drawable/ic_add_business"
-        android:title="@string/title_rent" />
+        android:icon="@drawable/ic_outline_format_list_bulleted"
+        android:title="@string/title_booking" />
+
+    <item
+        android:id="@+id/navigation_wishlist"
+        android:icon="@drawable/ic_outline_favorite"
+        android:title="@string/title_wishlist" />
 
     <item
         android:id="@+id/navigation_chatlist"

@@ -1,7 +1,11 @@
 <resources>
     <string name="app_name">Riau Rental</string>
     <string name="title_activity_owner_main">MainActivity</string>
+    <string name="title_activity_tenant_main">MainActivity</string>
     <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_rent">Rent</string>
+    <string name="title_booking">Booking</string>
+    <string name="title_wishlist">Wishlist</string>
+    <string name="title_chatlist">Chat</string>
+    <string name="title_profile">Profile</string>
 </resources>
